@@ -23,4 +23,6 @@ public:
 	void push(); // "проталкивание" элемента в список
 	void fill(string name, string post, int year, int ID); // заполнение списка
 	void show(int ID);
+	void sorting();
+	void swap(Worker & object_1, Worker & object_2);
 };

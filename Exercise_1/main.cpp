@@ -42,6 +42,7 @@ int main()
 		case 2:
 			system("cls");
 			cout << "ID" << "\t\t\t" << "Ф.И.О." << "\t\t\t" << "\tДолжность" << "\t\t" << "Год поступления" << endl;
+			list.sorting();
 			for (int i = 0; i < temp_length; i++) list.show(i);
 			system("pause");
 			break;

@@ -18,3 +18,8 @@ void Worker::get(int ID)
 {
 	cout << ID + 1 << "\t\t\t" << name << "\t\t\t" << post << "\t\t\t" << year << endl;
 }
+
+string Worker::get_surname()
+{
+	return name;
+}
