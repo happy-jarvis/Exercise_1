@@ -1,4 +1,5 @@
-#include "header.h"
+ï»¿#include "header.h"
+#include "func.h"
 
 int main()
 {
@@ -23,7 +24,7 @@ int main()
 		case 0:
 			break;
 		default:
-			cout << "Íåêêîðåêòíîå äåéñòâèå! Ïîæàëóéñòà, ïîâòîðèòå ïîïûòêó!";
+			cout << "ÐÐµÐºÐºÐ¾Ñ€ÐµÐºÑ‚Ð½Ð¾Ðµ Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ðµ! ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð°, Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð¸Ñ‚Ðµ Ð¿Ð¾Ð¿Ñ‹Ñ‚ÐºÑƒ!";
 			Sleep(970);
 		}
 	} while (decision != 0);
