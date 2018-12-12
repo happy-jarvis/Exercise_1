@@ -84,3 +84,12 @@ void List::swap(Worker &object_1, Worker &object_2)
 	object_1 = object_2;
 	object_2 = temp;
 }
+
+void List::operator+=(Worker & object)
+{
+	push();
+	length++;
+	tail = head;
+	while (tail->ptrNext != nullptr) tail = tail->ptrNext;
+	tail->data = object;
+}

@@ -13,6 +13,7 @@ int main()
 	string temp_post = " ";
 	int temp_year = 0;
 	int temp_length = 0;
+	Worker temp;
 
 	do
 	{
@@ -43,10 +44,18 @@ int main()
 			system("cls");
 			cout << "ID" << "\t\t\t" << "Ф.И.О." << "\t\t\t" << "\tДолжность" << "\t\t" << "Год поступления" << endl;
 			list.sorting();
-			for (int i = 0; i < temp_length; i++) list.show(i);
+			for (int i = 0; i < temp_length; i++)
+			{
+				list.show(i);
+			}
 			system("pause");
 			break;
 		case 3:
+			flush_stdin();
+			temp_length++;
+			set_worker(temp_name, temp_post, temp_year);
+			temp.set(temp_name, temp_post, temp_year);
+			list.operator+=(temp);
 			break;
 		case 4:
 			break;

@@ -25,4 +25,5 @@ public:
 	void show(int ID);
 	void sorting();
 	void swap(Worker & object_1, Worker & object_2);
+	void operator+=(Worker &object);
 };
