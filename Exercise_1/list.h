@@ -19,4 +19,8 @@ private:
 public:
 	List();
 	~List();
+	void create(int length); // создание списка размером length
+	void push(); // "проталкивание" элемента в список
+	void fill(string name, string post, int year, int ID); // заполнение списка
+	void show(int ID);
 };

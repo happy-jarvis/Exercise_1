@@ -17,3 +17,12 @@ void set_worker(string &name, string &post, int &year)
 	cin >> year;
 	flush_stdin();
 }
+
+int set_length()
+{
+	int length;
+	cout << "Введите размер списка: ";
+	cin >> length;
+	flush_stdin();
+	return length;
+}
