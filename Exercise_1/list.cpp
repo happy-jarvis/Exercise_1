@@ -102,7 +102,7 @@ void List::operator-=(int ID)
 {
 	if (ID > length || ID <= 0)
 	{
-		throw exception("Invalid item number entered !");
+		throw "Некорректная длина списка!";
 	}
 	Node *temp = head;
 	Node *temp_prev = 0;
@@ -120,7 +120,7 @@ void List::operator-=(int ID)
 			delete_2(ID, temp); // удаление первого элемента списка
 		}
 
-		else if (ID == length && length != 1)
+		else if (ID == length && length != 1) // удаление последнего элемента
 		{
 
 		}
@@ -179,4 +179,28 @@ void List::delete_3(int ID, Node *temp, Node *temp_prev)
 		length--;
 		delete tail;
 		tail = temp_prev;
+}
+
+void List::special_show(int expiriense)
+{
+	system("cls");
+	if (length > 0)
+	{
+		int j = 0;
+		if (expiriense < 0) throw "Отрицательный стаж работы!";
+		else
+		{
+			tail = head;
+			for (int i = 0; i < length; i++)
+			{
+				if (tail->data.experience() >= expiriense)
+				{
+					tail->data.get(i);
+				}
+				tail = tail->ptrNext;
+			}
+			if (j == 0) cout << "Таких работников нет. Может быть стоит подумать над этим?" << endl;
+		}
+		system("pause");
+	}
 }

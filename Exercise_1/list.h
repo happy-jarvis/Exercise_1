@@ -31,4 +31,5 @@ public:
 	void delete_1(int ID, Node *temp, Node *temp_prev, Node *temp_next);
 	void delete_2(int ID, Node *temp);
 	void delete_3(int ID,  Node *temp, Node *temp_prev);
+	void special_show(int expiriense);
 };

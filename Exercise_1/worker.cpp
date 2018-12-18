@@ -23,3 +23,15 @@ string Worker::get_surname()
 {
 	return name;
 }
+
+int Worker::get_experience()
+{
+	return year;
+}
+
+int Worker::experience()
+{
+	int current_year = 2018;
+	int experience = current_year - get_experience();
+	return experience;
+}

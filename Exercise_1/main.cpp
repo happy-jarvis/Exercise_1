@@ -68,6 +68,8 @@ int main()
 			break;
 
 		case 5:
+			flush_stdin();
+			list.special_show(expiriense());
 			break;
 		case 0:
 			break;

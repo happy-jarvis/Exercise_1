@@ -30,7 +30,15 @@ int set_length()
 int set_ID()
 {
 	int ID;
-	cout << "Введите ID человека, которого нужно вычеркнуть из телефонной книги: ";
+	cout << "Введите ID человека: ";
 	cin >> ID;
 	return ID;
+}
+
+int expiriense()
+{
+	int expiriense = 0;
+	cout << "Введите стаж работы: ";
+	cin >> expiriense;
+	return expiriense;
 }
