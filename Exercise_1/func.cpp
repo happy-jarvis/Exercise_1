@@ -26,3 +26,11 @@ int set_length()
 	flush_stdin();
 	return length;
 }
+
+int set_ID()
+{
+	int ID;
+	cout << "Введите ID человека, которого нужно вычеркнуть из телефонной книги: ";
+	cin >> ID;
+	return ID;
+}

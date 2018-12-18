@@ -7,13 +7,6 @@ Worker::Worker()
 	year = 0;
 }
 
-/*Worker::Worker(string name, string post, int year)
-{
-	this->name = name;
-	this->post = post;
-	this->year = year;
-}*/
-
 void Worker::set(string name, string post, int year)
 {
 	this->name = name;

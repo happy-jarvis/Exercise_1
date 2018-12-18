@@ -22,13 +22,14 @@ int main()
 			<< "1 - Создать список и заполнить;" << endl
 			<< "2 - Вывести список на экран;" << endl
 			<< "3 - Добавить сотрудника;" << endl
-			<< "4 - уволить сотрудника;" << endl
-			<< "5 - поиск по стажу работы;" << endl
-			<< "0 - завершение работы." << endl << endl;
+			<< "4 - Уволить сотрудника;" << endl
+			<< "5 - Поиск по стажу работы;" << endl
+			<< "0 - Завершение работы." << endl << endl;
 		cin >> decision;
 
 		switch (decision)
 		{
+
 		case 1:
 			system("cls");
 			list.create(temp_length = set_length());
@@ -40,6 +41,7 @@ int main()
 				list.fill(temp_name, temp_post, temp_year, i);
 			}
 			break;
+
 		case 2:
 			system("cls");
 			cout << "ID" << "\t\t\t" << "Ф.И.О." << "\t\t\t" << "\tДолжность" << "\t\t" << "Год поступления" << endl;
@@ -50,6 +52,7 @@ int main()
 			}
 			system("pause");
 			break;
+
 		case 3:
 			flush_stdin();
 			temp_length++;
@@ -57,8 +60,13 @@ int main()
 			temp.set(temp_name, temp_post, temp_year);
 			list.operator+=(temp);
 			break;
+
 		case 4:
+			flush_stdin();
+			temp_length--;
+			list.operator-=(set_ID());
 			break;
+
 		case 5:
 			break;
 		case 0:
@@ -66,6 +74,7 @@ int main()
 		default:
 			cout << "Неккоректное действие! Пожалуйста, повторите попытку!";
 			Sleep(970);
+			break;
 		}
 	} while (decision != 0);
 
