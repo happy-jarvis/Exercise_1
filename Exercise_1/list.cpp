@@ -195,6 +195,7 @@ void List::special_show(int expiriense)
 			{
 				if (tail->data.experience() >= expiriense)
 				{
+					j++;
 					tail->data.get(i);
 				}
 				tail = tail->ptrNext;

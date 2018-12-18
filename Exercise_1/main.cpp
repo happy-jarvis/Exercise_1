@@ -31,14 +31,23 @@ int main()
 		{
 
 		case 1:
-			system("cls");
-			list.create(temp_length = set_length());
-			for (int i = 0; i < temp_length; i++)
+			try
 			{
 				system("cls");
-				cout << "Осталось - " << temp_length - i << endl;
-				set_worker(temp_name, temp_post, temp_year);
-				list.fill(temp_name, temp_post, temp_year, i);
+				list.create(temp_length = set_length());
+				for (int i = 0; i < temp_length; i++)
+				{
+					system("cls");
+					cout << "Осталось - " << temp_length - i << endl;
+					set_worker(temp_name, temp_post, temp_year);
+					list.fill(temp_name, temp_post, temp_year, i);
+				}
+			}
+			catch (const char *error)
+			{
+				system("cls");
+				cout << error;
+				Sleep(970);
 			}
 			break;
 
