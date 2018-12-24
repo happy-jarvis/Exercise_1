@@ -122,7 +122,7 @@ void List::operator-=(int ID)
 
 		else if (ID == length && length != 1) // удаление последнего элемента
 		{
-
+			delete_3(ID, temp, temp_prev, tail);
 		}
 	}
 }
@@ -169,7 +169,7 @@ void List::delete_2(int ID, Node *temp)
 	}
 }
 
-void List::delete_3(int ID, Node *temp, Node *temp_prev)
+void List::delete_3(int ID, Node *temp, Node *temp_prev, Node *tail)
 {
 		for (int i = 1; i < length; i++)
 		{
